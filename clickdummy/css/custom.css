@@ -1,0 +1,31 @@
+.sfpage {
+    height   : 100%;
+    margin     : 0;
+    padding    : 0;
+}
+.sfpage .ui-content, .listview2 {
+    min-height : 100%;
+    height     : 100%;
+    margin     : 0;
+    padding    : 0;
+}
+.listview2 .ui-li { padding : 0; height : 50%; }
+.listview3 .ui-li { padding : 0; height : 33%; }​
+.listview4 .ui-li { padding : 0; height : 25%; }
+
+.center-wrapper {
+   text-align: center;
+}
+
+.center-wrapper .center {
+   margin: 0 auto;
+   position: relative; 
+   top: 50%;    
+}​​
+
+.centered {
+   position: relative; 
+   top: 50%;
+   left: 50%;
+   margin: 0 auto;
+}
