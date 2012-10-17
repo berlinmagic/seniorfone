@@ -2,129 +2,301 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-startup-image" href="jqt_startup.png" />
+	
 	<title>seniorfone prototype</title>
 	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.2.0.css" />
-   <link rel="stylesheet"  href="css/custom.css" />
+	<link rel="stylesheet"  href="css/custom.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Fenix&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 	<script src="js/jquery-1.8.2.js"></script>
 	<script src="js/jquery.mobile-1.2.0.js"></script>
 	
 </head>
 <body> 
 
+<!-- M E N U E - H O M E  -->
+	
 <div data-role="page" id="home" class="sfpage">
+	<div data-role="content" class="paperback"> 
+		<div class="reg_content">
+			<div class="inner_content">
+				<br/><br/>
+				<h1>12:00</h1>
+				<h4>Montag</h4>
+			</div><!-- /inner_content-->
+			<div class="footer">
+				<a class="speaker"><i class="icon-bullhorn"></i></a>
+			</div>
+		</div><!-- /reg_content -->
+		<div class="reg_nav">
+			<ul class="main_nav_ul">
+				<li class="main_nav_li">
+					<a class="nav_btn aktiv" data-transition="turn" href="#home"><i class="icon-home"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="turn" href="#numbers"><i class="icon-phone"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#contacts"><i class="icon-group"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#messages"><i class="icon-envelope"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#events"><i class="icon-calendar"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#emergency"><i class="icon-heart-empty"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#weather"><i class="icon-cloud"></i></a>
+				</li>
+				
+			</ul>
+		</div><!-- /reg_nav -->
+	</div>
+</div>
 
-   <div data-role="content">
-        <ul data-role="listview" class="listview2">
-            <li class="center-wrapper">
-               <div class="center">
-               home screen
-               <br/>
-               [date/time here]
-               </div>
-            </li>
-            <li class="center-wrapper">
-               <div>
-                  <div class="ui-grid-b">
-                     <div class="ui-block-a"><a data-role="button" data-transition="slide" href="#dial1">[dial image]</a></div>
-                     <div class="ui-block-b"><a data-role="button" data-transition="slide" href="#contact1">[contact image]</a></div>
-                     <div class="ui-block-c"><a data-role="button" data-transition="slide" href="#emergency1">[emergency image]</a></div>
-                     <div class="ui-block-a"><a data-role="button" data-transition="slide" href="#events">[events image]</a></div>
-                     <div class="ui-block-b"><a data-role="button" data-transition="slide" href="#memo">[memo image]</a></div>
-                     <div class="ui-block-c"><a data-role="button" data-transition="slide" href="#weather">[weather image]</a></div>
-                   </div>
-                </div>
-            </li>
-        </ul>
-   </div><!-- /content -->
+<!-- M E N U E - N U M B E R S  -->
 
-</div><!-- /page -->
+<div data-role="page" id="numbers" class="sfpage">
+	<div data-role="content" class="paperback"> 
+		<div class="reg_content">
+			<div class="inner_content">
+				<h2>Anrufen</h2>
+			</div><!-- /inner_content-->
+			<div class="footer">
+				<a class="submenue_btn" data-role="button" data-transition="slide" href="#numpad">
+					<h4>Nummer wählen</h4>
+				</a>
+				<a class="submenue_btn" data-role="button" data-transition="slide" href="#contacts">
+					<h4>Kontakte wählen</h4>
+				</a>
+				<a class="submenue_btn" data-role="button" data-transition="slide" href="#emergency">
+					<h4>Notruf anrufen</h4>
+				</a>
+				<br/><br/>
+				<a class="speaker"><i class="icon-bullhorn"></i></a>
+			</div>
+		</div><!-- /reg_content -->
+		<div class="reg_nav">
+			<ul class="main_nav_ul">
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#home"><i class="icon-home"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn aktiv" data-transition="slide" href="#numbers"><i class="icon-phone"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#contacts"><i class="icon-group"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#messages"><i class="icon-envelope"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#events"><i class="icon-calendar"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#emergency"><i class="icon-heart-empty"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#weather"><i class="icon-cloud"></i></a>
+				</li>
+			</ul>
+		</div><!-- /reg_nav -->
+	</div>
+</div>
+
+<!-- M E N U E - C O N T A C T S  -->
+
+<div data-role="page" id="contacts" class="sfpage">
+	<div data-role="content" class="paperback"> 
+		<div class="reg_content">
+			<div class="inner_content">
+				<h2>Kontakte</h2>
+			</div><!-- /inner_content-->
+			<div class="footer">
+				<a class="speaker"><i class="icon-bullhorn"></i></a>
+			</div>
+		</div><!-- /reg_content -->
+		<div class="reg_nav">
+			<ul class="main_nav_ul">
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#home"><i class="icon-home"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#numbers"><i class="icon-phone"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn aktiv" data-transition="slide" href="#contacts"><i class="icon-group"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#messages"><i class="icon-envelope"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#events"><i class="icon-calendar"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#emergency"><i class="icon-heart-empty"></i></a>
+				</li>
+				<li class="main_nav_li">
+					<a class="nav_btn" data-transition="slide" href="#weather"><i class="icon-cloud"></i></a>
+				</li>
+			</ul>
+		</div><!-- /reg_nav -->
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div data-role="page" id="dial1" class="sfpage">
-   <div data-role="content">  
-        <ul data-role="listview" class="listview2">
-            <li class="center-wrapper">
-               <div class="center">
-               dial screen
-               <br/>
-               [some image here]
-               </div>
-            </li>
-            <li class="center-wrapper">
-               <div class="center"><a data-role="button" data-transition="slide" href="#dial2">[big dial image/button here]</a></div>
-            </li>
-        </ul>
-   </div><!-- /content -->
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					dial screen
+					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#dial2">[big dial image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
 </div><!-- /page -->
 
-<div data-role="page" id="dial2" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:dial screen with numpad</p>      
-   </div><!-- /content -->
+
+
+
+
+
+
+<!-- D I A L   S C R E E N  -->
+
+<div data-role="page" id="numpad" class="sfpage">
+	<div data-role="content" class="paperback2"> 
+		<div class="inner_content2">
+			<div class="numberfield">
+				numfield
+			</div><!-- /numberfield-->
+			<div class="dialpad">
+				dialpad
+			</div><!-- /dialpad-->
+		</div><!-- /inner_content2-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	   
+	</div><!-- /content -->
 </div><!-- /page -->
+
+
+
+
+
+
+
 
 <div data-role="page" id="contact1" class="sfpage">
-   <div data-role="content">  
-        <ul data-role="listview" class="listview2">
-            <li class="center-wrapper">
-               <div class="center">
-               contact screen
-               <br/>
-               [some image here]
-               </div>
-            </li>
-            <li class="center-wrapper">
-               <div class="center"><a data-role="button" data-transition="slide" href="#contact2">[big contact image/button here]</a></div>
-            </li>
-        </ul>
-   </div><!-- /content -->
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					contact screen
+					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#contact2">[big contact image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="contact2" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:contact screen</p>      
-   </div><!-- /content -->
+	<div data-role="content">  
+		<p>TODO:contact screen</p>      
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="emergency1" class="sfpage">
-   <div data-role="content">  
-        <ul data-role="listview" class="listview2">
-            <li class="center-wrapper">
-               <div class="center">
-               emergency screen
-               <br/>
-               [some image here]
-               </div>
-            </li>
-            <li class="center-wrapper">
-               <div class="center"><a data-role="button" data-transition="slide" href="#emergency2">[big emergency image/button here]</a></div>
-            </li>
-        </ul>
-   </div><!-- /content -->
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					emergency screen
+ 					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#emergency2">[big emergency image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="emergency2" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:emergency screen</p>      
-   </div><!-- /content -->
+	<div data-role="content">  
+		<p>TODO:emergency screen</p>      
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="events" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:events screen</p>      
-   </div><!-- /content -->
+	<div data-role="content">  
+		<p>TODO:events screen</p>      
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="memo" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:memo screen</p>      
-   </div><!-- /content -->
+	<div data-role="content">  
+		<p>TODO:memo screen</p>      
+	</div><!-- /content -->
 </div><!-- /page -->
 
 <div data-role="page" id="weather" class="sfpage">
-   <div data-role="content">  
-      <p>TODO:weather screen</p>      
-   </div><!-- /content -->
+	<div data-role="content">  
+		<p>TODO:weather screen</p>      
+	</div><!-- /content -->
 </div><!-- /page -->
 
 </body>

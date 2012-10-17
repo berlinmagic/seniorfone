@@ -1,14 +1,214 @@
-.sfpage {
-    height   : 100%;
-    margin     : 0;
-    padding    : 0;
+body, html {
+	background: transparent url("./../images/natur1.jpg") no-repeat center center fixed !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
 }
+h1, h2, h4 {
+	font-family: 'Fenix', serif; color: #600000; font-style: bold;
+	margin: 0; padding: 0;
+}
+h1 {font-size: 60px; color: #600000; line-height: 60px; }
+h2 {font-size: 30px; color: #600000; line-height: 40px; }
+h4 {font-size: 20px; color: #600000; line-height: 30px; }
+
+/*-- M E N U E   S C R E E N  --*/
+
+.paperback, .paperback2 {
+	display: block;
+	position: absolute;
+	top: 10px; right: 10px; bottom: 10px; left: 10px; 
+	height: auto !important;
+	width: auto !important;
+	background-color: #e9e9e5;
+	border: dotted 1px: #000;
+	padding: 20px;
+	overflow: visible;
+	box-shadow: inset 0 0 10px #fff;
+}
+
+.paperback:after {
+	display: block;
+	position: absolute;
+	content: "";
+	left: -5px; top: 10px; bottom: 10px;
+	width: 23px;
+	background: transparent url("./../images/klammer.png") left top repeat-y;
+	z-index: 10;
+}
+
+.reg_content {
+	display: block;
+	position: relative;
+	/*background-color: #f4f4f4;*/
+	margin: 0;
+	margin-right: 60px;
+	margin-left: 10px;
+	padding: 0;	
+	height: 100%;
+}
+
+.reg_nav {
+	display: block;
+	position: absolute;
+	right: 0px; top: 0px;
+	width: 60px;
+	height: 100%;
+	background: #e0e0dd;
+	box-shadow: inset 0 0 10px #999;
+}
+
+.sfpage {
+	display: block;    
+	height: 100%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+	background: transparent;
+}
+
+.inner_content {
+	display: block;
+	padding: 10px;
+	border: dotted 1px #cc4;
+	text-align: center;
+}
+
+.main_nav_ul {
+	display: block;
+	position: relative;
+	margin: 0;
+    padding: 0;
+	list-style: none;
+}
+.main_nav_ul li {
+	display: block;
+	position: relative;
+	margin: 0;
+    padding: 0;
+	list-style: none;
+}
+.main_nav_ul li a.nav_btn, .main_nav_ul li a.nav_btn:visited {
+	display: block;
+	position: relative;
+	margin: 0 !important;
+    padding: 0 !important;
+	text-align: center;
+	text-decoration: none;
+	line-height: 58px;
+	font-size: 32px;
+	color: #999;
+	border-top: solid 1px #fff; border-bottom: solid 1px #aaaaaa;	
+}
+.main_nav_ul li a.nav_btn:hover {
+	color: #666;
+	background: #e9e9e5;
+}
+.main_nav_ul li a.nav_btn.aktiv {
+	color: #ff9933;
+	background: #e9e9e5;
+}
+
+.footer {
+	display: block;
+	position: absolute;
+	margin: 0 !important;
+    padding: 0 !important;
+	/*border: dotted 1px #c00;*/
+	bottom: 10px;
+	left: 10px; right: 10px;
+}
+a.submenue_btn {
+	margin: 0;
+	margin-bottom: 30px;
+	display: block;
+	border-radius: 5px;
+}
+
+a.speaker {
+	display: block;
+	position: relative;
+	margin: 0 auto !important;
+    padding: 0 !important;
+	text-align: center;
+	line-height: 58px;
+	width: 60px;
+	font-size: 32px;
+	border-radius: 100%;	
+	background: #ff9933;
+	box-shadow: inset 0 0 10px #cc3300, 0 2px 2px 0px #fff;
+	/*box-shadow: 0 2px 2px 0px #fff;*/
+
+}
+.icon-bullhorn {
+	color: #fff;
+	text-shadow: 2px 2px 2px #cc3300;
+ 
+}
+
+/*-- D I A L   S C R E E N  --*/
+
+
+.inner_content2 {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	margin: -10px;
+	background: #444;
+	height: 100%;
+}
+
+.numberfield {
+	display: block;
+	position: relative;
+	padding: 10px;
+	/*border: dotted 1px #cc4;*/
+	text-align: center;
+	height: 10%;
+	background: #333;
+	box-shadow: inset 0 0 10px #222;
+		
+}
+
+.dialpad {
+	display: block;
+	position: relative;
+	border: dotted 1px #c00;
+	margin: 0 !important;
+    padding: 0 !important;
+	bottom: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #######################################################
+
+/*
 .sfpage .ui-content, .listview2 {
-    min-height : 100%;
+   /* min-height : 100%;
     height     : 100%;
     margin     : 0;
     padding    : 0;
 }
+
 .listview2 .ui-li { padding : 0; height : 50%; }
 .listview3 .ui-li { padding : 0; height : 33%; }​
 .listview4 .ui-li { padding : 0; height : 25%; }
@@ -23,3 +223,14 @@
    top: 50%;    
 }​​
 
+/*.paper-reg {
+	margin     : 0px;
+    padding    : 10px;
+	border: solid 1px: #c33;
+	color: #369;
+	
+}
+
+ul.listview2.sf, .ui-content .ui-listview.sf {
+	margin: 0 !important;
+}
