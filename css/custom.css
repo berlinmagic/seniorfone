@@ -258,6 +258,8 @@ a.speaker {
 .call_content.susanne { background: transparent url("./../images/b_susanne-schmidt.jpg") no-repeat center center; }
 .call_content.sonja { background: transparent url("./../images/b_sonja-rosenbaum.jpg") no-repeat center center; }
 .call_content.frieda { background: transparent url("./../images/b_frieda_foster.jpg") no-repeat center center; }
+.call_content.emergency { background: transparent url("./../images/b_112.jpg") no-repeat center center; }
+.call_content.doc { background: transparent url("./../images/b_doc.jpg") no-repeat center center; }
 
 .call_content .call_info {
   display: block;
