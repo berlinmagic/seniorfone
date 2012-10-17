@@ -28,6 +28,10 @@ h4 {font-size: 20px; color: #600000; line-height: 30px; }
 	box-shadow: inset 0 0 10px #fff;
 }
 
+.dial .paperback2 {
+  padding: 10px;
+}
+
 .paperback:after {
 	display: block;
 	position: absolute;
@@ -147,15 +151,17 @@ a.speaker {
  
 }
 
-/*-- D I A L   S C R E E N  --*/
+
+
+/* # # # #  D I A L   S C R E E N  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # */
 
 
 .inner_content2 {
 	position: relative;
 	display: block;
-	padding: 10px;
+	padding: 0;
 	text-align: center;
-	margin: -10px;
+	margin: 0;
 	background: #444;
 	height: 100%;
 }
@@ -163,8 +169,8 @@ a.speaker {
 .numberfield {
 	display: block;
 	position: relative;
-	padding: 10px;
-	margin: -10px -10px 0 -10px;
+	padding: 0;
+	margin: 0;
 	/*border: dotted 1px #cc4;*/
 	text-align: center;
 	height: 15%;
@@ -177,27 +183,26 @@ a.speaker {
 	position: absolute;
 	border: dotted 1px #c00;
 	margin: 0 !important;
-    padding: 0 !important;
-	top: 18%;
+  padding: 10px !important;
+	top: 15%;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
 
 }
-/*.dialpad_inner {
-	display: block;
-	position: absolute;
-	top: 10px;
-	bottom: 10px;
-	right: 10px;
-	left: 10px;
-	border: dotted 1px #c00;		
+
+.dialpad .number_key, .dialpad .hash_key, .dialpad .delete_key, .dialpad .call_key, .dialpad .add_contact_key {
+  display: block;
+  height: 20%;
+  width: 33.333333%;
+  box-sizing: border-box;
+  float: left;
+  border: solid 1px #c00;
+  
 }
 
-*/
 
-
-
+.dialpad .call_key { width: 66.666666%; }
 
 
 
