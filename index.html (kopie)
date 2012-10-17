@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>seniorfone prototype</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.2.0.css" />
+   <link rel="stylesheet"  href="css/custom.css" />
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+	
+</head>
+<body> 
+
+<div data-role="page" id="home" class="sfpage">
+
+	<div data-role="content">
+ 		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					home screen
+					<br/>
+					[date/time here]
+				</div>
+			</li>
+		    <li class="center-wrapper">
+				<div>
+					<div class="ui-grid-b">
+						<div class="ui-block-a">
+							<a data-role="button" data-transition="slide" href="#dial1">[dial image]</a>
+						</div>
+						<div class="ui-block-b"><a data-role="button" data-transition="slide" href="#contact1">[contact image]</a>
+						</div>
+						<div class="ui-block-c"><a data-role="button" data-transition="slide" href="#emergency1">[emergency image]</a>
+						</div>
+						<div class="ui-block-a">
+							<a data-role="button" data-transition="slide" href="#events">[events image]</a>
+							</div>
+						<div class="ui-block-b"><a data-role="button" data-transition="slide" href="#memo">[memo image]</a>
+						</div>
+						<div class="ui-block-c"><a data-role="button" data-transition="slide" href="#weather">[weather image]</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="dial1" class="sfpage">
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					dial screen
+					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#dial2">[big dial image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="dial2" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:dial screen with numpad</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="contact1" class="sfpage">
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					contact screen
+					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#contact2">[big contact image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="contact2" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:contact screen</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="emergency1" class="sfpage">
+	<div data-role="content">  
+		<ul data-role="listview" class="listview2">
+			<li class="center-wrapper">
+				<div class="center">
+					emergency screen
+ 					<br/>
+					[some image here]
+				</div>
+			</li>
+			<li class="center-wrapper">
+				<div class="center"><a data-role="button" data-transition="slide" href="#emergency2">[big emergency image/button here]</a>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="emergency2" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:emergency screen</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="events" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:events screen</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="memo" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:memo screen</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="weather" class="sfpage">
+	<div data-role="content">  
+		<p>TODO:weather screen</p>      
+	</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>
