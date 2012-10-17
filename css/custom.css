@@ -1,59 +1,60 @@
-body, html {
-	background: transparent url("./../images/natur1.jpg") no-repeat center center fixed !important;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;	
-}
+html, body { background: #e0e0dd !important; margin: 0; padding: 0; }
+
 h1, h2, h4 {
 	font-family: 'Fenix', serif; color: #600000; font-style: bold;
 	margin: 0; padding: 0;
 }
+
 h1 {font-size: 60px; color: #600000; line-height: 60px; }
 h2 {font-size: 30px; color: #600000; line-height: 40px; }
 h4 {font-size: 20px; color: #600000; line-height: 30px; }
 
+a { text-decoration: none; outline: none; }
+
 /*-- M E N U E   S C R E E N  --*/
 
-.paperback, .paperback2 {
+
+.booklet {
 	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+  padding: 0;
+	background: transparent;
+}
+
+.booklet .content {
+  display: block;
 	position: absolute;
-	top: 10px; right: 10px; bottom: 10px; left: 10px; 
+	top: 0; right: 0; bottom: 0; left: 0; 
 	height: auto !important;
 	width: auto !important;
-	background-color: #e9e9e5;
-	border: solid 2px rgba(0,0,0, .5);
-	padding: 20px;
+	padding: 0;
 	overflow: visible;
 	box-shadow: inset 0 0 10px #fff;
 }
-
-.dial .paperback2 {
-  padding: 10px;
-}
-
-.paperback:after {
+.booklet .content:after {
 	display: block;
 	position: absolute;
 	content: "";
-	left: -5px; top: 10px; bottom: 10px;
+	left: -11px; top: 10px; bottom: 10px;
 	width: 23px;
 	background: transparent url("./../images/klammer.png") left top repeat-y;
 	z-index: 10;
 }
 
-.reg_content {
+.booklet .content .reg_content {
 	display: block;
-	position: relative;
+	position: absolute;
 	/*background-color: #f4f4f4;*/
 	margin: 0;
-	margin-right: 60px;
-	margin-left: 10px;
+	top: 10px; right: 70px; bottom: 10px; left: 20px;
 	padding: 0;	
-	height: 100%;
+	height: auto;
 }
 
-.reg_nav {
+.booklet .content .reg_nav {
 	display: block;
 	position: absolute;
 	right: 0px; top: 0px;
@@ -61,16 +62,12 @@ h4 {font-size: 20px; color: #600000; line-height: 30px; }
 	height: 100%;
 	background: #e0e0dd;
 	box-shadow: inset 0 0 10px #999;
+	margin: 0;
+	padding: 0;
 }
 
-.sfpage {
-	display: block;    
-	height: 100%;
-	width: 100%;
-	margin: 0;
-    padding: 0;
-	background: transparent;
-}
+
+
 
 .inner_content {
 	display: block;
@@ -78,6 +75,9 @@ h4 {font-size: 20px; color: #600000; line-height: 30px; }
 	border: dotted 1px #cc4;
 	text-align: center;
 }
+
+
+
 
 .main_nav_ul {
 	display: block;
@@ -156,15 +156,8 @@ a.speaker {
 /* # # # #  D I A L   S C R E E N  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # */
 
 
-.inner_content2 {
-	position: relative;
-	display: block;
-	padding: 0;
-	text-align: center;
-	margin: 0;
-	background: #444;
-	height: 100%;
-}
+
+
 
 .numberfield {
 	display: block;
@@ -173,9 +166,13 @@ a.speaker {
 	margin: 0;
 	/*border: dotted 1px #cc4;*/
 	text-align: center;
-	height: 15%;
+	height: 80px;
 	background: #333;
 	box-shadow: inset 0 0 10px #222;		
+	line-height: 80px;
+	font-size: 42px;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
 }
 
 .dialpad {
@@ -183,44 +180,176 @@ a.speaker {
 	position: absolute;
 	border: dotted 1px #c00;
 	margin: 0 !important;
-  padding: 10px !important;
-	top: 15%;
+  padding: 0 !important;
+	top: 80px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
 
 }
 
-.dialpad .number_key, .dialpad .hash_key, .dialpad .delete_key, .dialpad .call_key, .dialpad .add_contact_key {
+.dialpad .dial_btn {
   display: block;
+  position: relative;
   height: 20%;
   width: 33.333333%;
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   float: left;
-  border: solid 1px #c00;
-  
+  text-align: center;
+  vertical-align: middle;
+}
+.dialpad .dial_btn .inner_btn {
+  display: block;
+  position: absolute;
+  top: 3px; right: 3px; bottom: 3px; left: 3px;
+  border: solid 1px #999;
+  border-radius: 5px;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 30px;
 }
 
 
-.dialpad .call_key { width: 66.666666%; }
+.dialpad .dial_btn.call_key { width: 66.666666%; }
 
 
 
 
 
 
+.nav_headline {
+  display: block;
+  position: relative;
+  background: #E9E9E5;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Fenix', serif;
+  font-size: 24px;
+}
+.nav_headline i {
+  color: #fb8515;
+  text-shadow: 0 1px 1px #000;
+}
+
+
+
+.nvbtn {
+  display: block;
+}
+
+.left_nav { float: left; }
+.right_nav { float: right; }
+
+
+.call_content {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; right: 0;
+  border: solid 1px rgba(0,0,0, .50);
+  overflow: hidden;
+  background-size: cover;
+}
+.call_content.anja { background: transparent url("./../images/b_anja_alt.jpg") no-repeat center center; }
+.call_content.jim { background: transparent url("./../images/b_jim-bean.jpg") no-repeat center center; }
+.call_content.paul { background: transparent url("./../images/b_paul-panter.jpg") no-repeat center center; }
+.call_content.susanne { background: transparent url("./../images/b_susanne-schmidt.jpg") no-repeat center center; }
+.call_content.sonja { background: transparent url("./../images/b_sonja-rosenbaum.jpg") no-repeat center center; }
+.call_content.frieda { background: transparent url("./../images/b_frieda_foster.jpg") no-repeat center center; }
+
+.call_content .call_info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  border: 0;
+}
+
+.call_content .call_info .callee {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  font-size: 30px;
+  background: rgba(0,0,0, .30);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+
+.call_content .call_info .call_actions {
+  display: block;
+  position: relative;
+  background: rgba(0,0,0, .50);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  border: 0;
+  padding: 1px;
+}
+
+.btn_key {
+  display: block;
+  position: relative;
+  height: 60px;
+  width: 30%;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  box-sizing: border-box;
+  font-size: 42px;
+}
+.btn_key.call_key {
+  width: 70%;
+}
 
 
 
 
+.btn_key a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 2px; right: 2px; bottom: 2px; left: 2px;
+  border: solid 1px #ccc;
+  color: #b9ff55 !important;
+}
+
+.btn_key a:hover {
+  color: #b9ff55 !important;
+}
 
 
+.call_key a.active { color: #c00 !important; }
+.speaker_key a.active { color: #c00 !important; }
+
+
+
+.cnt_btn {
+  display: block;
+  position: relative;
+  height: 33.41%;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+  float: left;
+  margin: 0;
+  background-size: cover;
+}
+.cnt_btn.anja { background: transparent url("./../images/s_anja_alt.jpg") no-repeat center center; }
+.cnt_btn.jim { background: transparent url("./../images/s_jim-bean.jpg") no-repeat center center; }
+.cnt_btn.paul { background: transparent url("./../images/s_paul-panter.jpg") no-repeat center center; }
+.cnt_btn.susanne { background: transparent url("./../images/s_susanne-schmidt.jpg") no-repeat center center; }
+.cnt_btn.sonja { background: transparent url("./../images/s_sonja-rosenbaum.jpg") no-repeat center center; }
+.cnt_btn.frieda { background: transparent url("./../images/s_frieda_foster.jpg") no-repeat center center; }
 
 /* #######################################################
 
-/*
+
 .sfpage .ui-content, .listview2 {
-   /* min-height : 100%;
+    min-height : 100%;
     height     : 100%;
     margin     : 0;
     padding    : 0;
@@ -240,7 +369,7 @@ a.speaker {
    top: 50%;    
 }​​
 
-/*.paper-reg {
+.paper-reg {
 	margin     : 0px;
     padding    : 10px;
 	border: solid 1px: #c33;
@@ -251,3 +380,7 @@ a.speaker {
 ul.listview2.sf, .ui-content .ui-listview.sf {
 	margin: 0 !important;
 }
+*/
+
+
+
