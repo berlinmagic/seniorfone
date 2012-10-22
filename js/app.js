@@ -21,7 +21,7 @@ $(function() {
 		$("#phone_number_display").html( that.substring(0, that.length - 1) );
 	});
 	
-	$('#phone_dialpad').on("longclick", ".delete_key", 700, function(event){
+	$('#phone_dialpad').on("longclick", ".delete_key", 300, function(event){
 		event.preventDefault();
 		$("#phone_number_display").html("");
 	});
