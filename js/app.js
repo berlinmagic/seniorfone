@@ -63,7 +63,7 @@ $(function() {
 				.find(".callee").html( that_name[that] );
 		}
 		$("#call_contact").attr("data-backto", "#dial");
-		$("#call_contact .call_content .call_key a").addClass('active');
+		$("#call_contact .call_content .call_key a").addClass('active').html('<i class="icon-download-alt"></i>');
 		$.mobile.changePage( "#call_contact", { transition: "turn"} );
 	});
 
@@ -78,7 +78,7 @@ $(function() {
 		event.preventDefault();
 		$("#call_contact .call_content").attr("class", "call_content emergency").find(".callee").html("Notruf 112");
 		$("#call_contact").attr("data-backto", "#home");
-		$("#call_contact .call_content .call_key a").addClass('active');
+		$("#call_contact .call_content .call_key a").addClass('active').html('<i class="icon-download-alt"></i>');
 		$.mobile.changePage( "#call_contact", { transition: "turn"} );
 	});
 
@@ -86,7 +86,7 @@ $(function() {
 		event.preventDefault();
 		$("#call_contact .call_content").attr("class", "call_content doc").find(".callee").html("Doktor Frank");
 		$("#call_contact").attr("data-backto", "#home");
-		$("#call_contact .call_content .call_key a").addClass('active');
+		$("#call_contact .call_content .call_key a").addClass('active').html('<i class="icon-download-alt"></i>');
 		$.mobile.changePage( "#call_contact", { transition: "turn"} );
 	});
 
