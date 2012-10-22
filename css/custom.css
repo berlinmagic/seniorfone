@@ -249,6 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', end
 	font-size: 30px;
 	font-family: 'Montserrat Alternates', sans-serif; color: #000; font-style: bold;
 	color: #000;
+	cursor: pointer;
 }
 
 
