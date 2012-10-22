@@ -20,6 +20,11 @@ $(function() {
 		var that = $("#phone_number_display").text();
 		$("#phone_number_display").html( that.substring(0, that.length - 1) );
 	});
+	
+	$('#phone_dialpad').on("longclick", ".delete_key", 700, function(event){
+		event.preventDefault();
+		$("#phone_number_display").html("");
+	});
 
 	$('#contacts').on("click", ".cnt_btn", function(event){
 		event.preventDefault();
